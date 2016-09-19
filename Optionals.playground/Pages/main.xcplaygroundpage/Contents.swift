@@ -16,7 +16,7 @@ var pet = "turtle 🐢"
 
 
 
-
+//String
 
 
 /*: question2
@@ -25,40 +25,26 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+//Optional
 
 
 
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
-
-
-
-
-
+//empty
 
 /*: question4
  ### 4. Give `petName` a value! Assign to it any string. What is its type now?
  */
 // write your code here
 
-
-
-
-
-
-
+petName = "Harry"
 /*: question5
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
-
-
-
-
+print(petName)
 
 
 /*: question6
@@ -68,7 +54,12 @@ var petName: String?
 
 
 
-
+if petName != nil {
+    print(petName)
+}
+else{
+    print("There is no pet name.")
+}
 
 
 
@@ -76,8 +67,12 @@ var petName: String?
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
-
+if petName != nil {
+    print(petName!)
+}
+else{
+    print("There is no pet name.")
+}
 
 
 
@@ -88,6 +83,9 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,6 +98,12 @@ var anotherPetName: String?
  */
 // write your code here
 
+if let printThis = anotherPetName{
+    print (anotherPetName!)
+}
+else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -114,9 +118,9 @@ var anotherPetName: String?
 // write your code here
 
 
-
-
-
+let soda: String?
+soda = "beverage"
+print(soda)
 
 
 
@@ -126,6 +130,8 @@ var anotherPetName: String?
  */
 // write your code here
 
+let popcorn: String? = nil
+//popcorn = "snack"
 
 
 
